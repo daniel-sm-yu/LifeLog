@@ -1,12 +1,19 @@
-.nav-link {
-	color: black;
-}
-
 .nav {
 	background-color: lightgrey;
 }
 
+.nav-item {
+	margin-left: 2em;
+}
+
 .presenter {
 	color: grey;
-	font-size: 1.1em;
+	font-size: 1.2em;
+	margin-right: 2em;
 }
+
+a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+}
+
