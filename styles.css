@@ -1,5 +1,12 @@
-styles.css
+.nav-link {
+	color: black;
+}
 
-h1 {
-	color: pink;
+.nav {
+	background-color: lightgrey;
+}
+
+.presenter {
+	color: grey;
+	font-size: 1.1em;
 }
