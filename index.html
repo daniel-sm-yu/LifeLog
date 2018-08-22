@@ -100,18 +100,42 @@
                         <label class="custom-control-label" for="annoyedRadio" style="color:#7B68EE">Annoyed</label>
                       </div>
                       <div class="custom-control custom-radio col">
-                        <input type="radio" id="stressedRadio" name=customRadio" class="custom-control-input">
+                        <input type="radio" id="stressedRadio" name="customRadio" class="custom-control-input">
                         <label class="custom-control-label" for="stressedRadio" style="color:#696969">Stressed</label>
                       </div>
                   </div>
                 </div>
               </div>
+            
+              <div class="form-group">
+                <h5 class="question">How was your day?</h5>
+                 <div class="slidecontainer">
+                   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                 </div>
+                 <div class="container">
+                  <div class="row">
+                    <div class="col text-left">The Worst</div>
+                    <div class="col text-center">It Was Whatever</div>
+                    <div class="col text-right">The Best</div>                 
+                  </div>
+                 </div> 
+              </div>
+              <br>
+              <div class="form-group">
+                <h5 class="question">What was the highlight?</h5>
+                <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                <h5 class="question">What was the lowlight?</h5>
+                <textarea class="form-control" id="textarea1" rows="3"></textarea>
+              </div>
+             
+
+
             </form>
             <!-- Log Form End -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -122,5 +146,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
