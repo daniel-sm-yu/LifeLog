@@ -3,13 +3,14 @@
 }
 
 .nav-item {
-	margin-left: 2em;
+	margin-right: 2em;
+	margin-left: .8em;
 }
 
 .presenter {
 	color: rgba(0,0,0,.5);
 	font-size: 1.2em;
-	margin-right: 2em;
+	margin-left: .5em;
 }
 
 a:hover {
