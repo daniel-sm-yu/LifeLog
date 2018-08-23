@@ -18,6 +18,16 @@ a:hover {
     color: rgba(0,0,0,.7);
 }
 
+.heading {
+	color: rgba(0,0,0,.45);
+	text-align: center;
+}
+
+.card {
+	height: 3em;
+	width: 3em;
+}
+
 
 /*FORM STYLES*/
 
