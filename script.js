@@ -23,7 +23,7 @@ for (var i=0; i<372; i+=1) {
 var pixelHTML = '';
 
 for (var i=0; i<pixelSheet.length; i+=1) {
-	if (i%12==0) { pixelHTML += '<div class="row pixelRow">'; }
+//	if (i%12==0) { pixelHTML += '<div class="row pixelRow">'; }
 
 	var pixelColor;
 	switch(pixelSheet[i].emotion) {
@@ -38,9 +38,9 @@ for (var i=0; i<pixelSheet.length; i+=1) {
 	}
 
 
-	pixelHTML += '<div class="col-auto card" style="background-color:' + pixelColor + ';"></div>';
+	pixelHTML += '<div class="col-auto card" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
 
-	if ((i+1)%12==0) { pixelHTML += '</div>'; }
+//	if ((i+1)%12==0) { pixelHTML += '</div>'; }
 };
 
 

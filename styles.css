@@ -32,15 +32,15 @@ a:hover {
     color: white;
 }
 
-linklocation
-.row {
-	margin: 0;
+#pixelsheet {
+	margin-left: 5%;
+	width: 45%;
 }
 
 .card {
 	height: 2.45em;
 	width: 2.45em;
-	margin-bottom: .25em;
+	margin-bottom:.25em;
 	margin-right:  .25em;
 }
 
