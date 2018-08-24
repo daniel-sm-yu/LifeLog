@@ -28,14 +28,18 @@ a:hover {
 	margin-top: 2.5em;
 }
 
+.btn-outline-warning:hover {
+    color: white;
+}
+
+linklocation
 .row {
 	margin: 0;
 }
 
-
 .card {
-	height: 2.3em;
-	width: 2.3em;
+	height: 2.5em;
+	width: 2.5em;
 	margin-bottom: .25em;
 	margin-right:  .25em;
 }
