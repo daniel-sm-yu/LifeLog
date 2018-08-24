@@ -10,8 +10,8 @@ class pixel {
 
 var pixelSheet = [];
 
-for (var i=0; i<62; i+=1) {
-	var date = i + 1;
+for (var i=0; i<364; i+=1) {
+	var date = 364 - i;
 	var emotion = Math.floor(Math.random()*8) + 1;
 	var rating = Math.floor(Math.random()*10) + 1;
 	var high = Math.floor(Math.random()*6) + 1;
@@ -20,6 +20,35 @@ for (var i=0; i<62; i+=1) {
 	pixelSheet[i] = new pixel(date, emotion, rating, high, low);
 }
 
+var pixelHTML = '';
+
+for (var i=0; i<pixelSheet.length; i+=1) {
+	if (i%14==0) { pixelHTML += '<div class="row pixelRow">'; }
+
+	var pixelColor;
+	switch(pixelSheet[i].emotion) {
+		case 1: pixelColor = "#8B4513"; break;
+		case 2: pixelColor = "#DC143C"; break;
+		case 3: pixelColor = "#FF6347"; break;
+		case 4: pixelColor = "#FFBE00"; break;
+		case 5: pixelColor = "#00CC8C"; break;
+		case 6: pixelColor = "#00BFFF"; break;
+		case 7: pixelColor = "#7B68EE"; break;
+		case 8: pixelColor = "#696969"; break;
+	}
+
+
+	pixelHTML += '<div class="col-auto card" style="background-color:' + pixelColor + ';"></div>';
+
+	if ((i+1)%14==0) { pixelHTML += '</div>'; }
+};
+
+
+
+
+pixelHTML += '</div>'
+
+$('#pixelsheet').html(pixelHTML);
 
 
 
@@ -31,7 +60,11 @@ for (var i=0; i<62; i+=1) {
 
 
 
-
+		
+          
+            
+          
+        
 
 
 

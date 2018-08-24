@@ -21,13 +21,25 @@ a:hover {
 .heading {
 	color: rgba(0,0,0,.45);
 	text-align: center;
+	margin: 1.5em 0 .5em;
 }
+
+.btn-outline-warning {
+	margin-top: 2.5em;
+}
+
+.row {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
 
 .card {
-	height: 3em;
-	width: 3em;
+	height: 2em;
+	width: 2em;
+	margin-bottom: -.1em;
+	margin-right:  .25em;
 }
-
 
 /*FORM STYLES*/
 
