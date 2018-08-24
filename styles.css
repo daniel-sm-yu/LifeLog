@@ -82,12 +82,13 @@ a.nav-item:hover,
 /*FORM STYLES*/
 
 .custom-radio {
-	margin-bottom: 2em;
+	margin: .7em 1em;
+	display: inline-block;
 }
 
 .question {
-	margin-top: 1.4em;
-	margin-bottom: 1.4em;
+	margin: 1.4em 0;
+	
 }
 
 textarea:focus,
