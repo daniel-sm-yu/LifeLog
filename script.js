@@ -1,3 +1,5 @@
+$('nav').sticky({topSpacing: 0});
+
 // Pixel Sheet
 class pixel {
 	constructor(date, emotion, rating, high, low) {
@@ -46,7 +48,7 @@ $('#pixelsheet').html(pixelHTML);
 // Pixel Sheet End
 
 // Daily Log
-
+$('#dailylog').sticky({topSpacing: 0});
 
 
 // Daily Log End

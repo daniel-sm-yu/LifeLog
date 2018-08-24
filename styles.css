@@ -1,10 +1,20 @@
-.nav {
-	background-color: lightgrey;
+/*For Shine Effect in Nav*/
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400); 
+
+
+nav {
+	transition: .15s;
+	height: 3em;
+}
+
+.is-sticky nav {
+	background-color: #505050;
 }
 
 .nav-item {
 	margin-right: 2em;
 	margin-left: .8em;
+	color: rgba(0,0,0,.5);
 }
 
 .presenter {
@@ -13,15 +23,38 @@
 	margin-left: .5em;
 }
 
+.is-sticky .nav-item,
+.is-sticky .presenter {
+	color: white;
+}
+
 a:hover {
     text-decoration: none;
     color: rgba(0,0,0,.7);
 }
 
+a.nav-item:hover,
+.presenter:hover {
+	 -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+	 -webkit-mask-size: 200%;
+	 animation: shine 1s infinite;
+	}
+
+	@-webkit-keyframes shine {
+	  from {
+	    -webkit-mask-position: 150%;
+	  }
+	  
+	  to {
+	    -webkit-mask-position: -50%;
+	  }
+}
+
 .heading {
 	color: rgba(0,0,0,.45);
 	text-align: center;
-	margin: 1.5em 0 .5em;
+	margin: 1em 0 .5em;
+	z-index: -1;
 }
 
 .btn-outline-warning {
@@ -32,8 +65,14 @@ a:hover {
     color: white;
 }
 
+.content {
+
+}
+
 #pixelsheet {
 	margin-left: 6%;
+	height: 35em;
+	z-index: -1;
 }
 
 .card {
@@ -44,6 +83,7 @@ a:hover {
 
 #dailylog {
 	margin-right: 6%;
+	z-index: -1;
 }
 
 /*FORM STYLES*/
