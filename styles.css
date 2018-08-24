@@ -60,7 +60,6 @@ a.nav-item:hover,
 
 #pixelsheet {
 	margin-left: 6%;
-	height: 35em;
 	z-index: -1;
 }
 
@@ -70,9 +69,14 @@ a.nav-item:hover,
 	margin-right: .3em;
 }
 
+#dailylog,
+#log {
+	z-index: -1;
+	height: 85vh;
+}
+
 #dailylog {
 	margin-right: 6%;
-	z-index: -1;
 }
 
 /*FORM STYLES*/

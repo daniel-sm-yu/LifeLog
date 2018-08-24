@@ -48,7 +48,7 @@ $('#pixelsheet').html(pixelHTML);
 // Pixel Sheet End
 
 // Daily Log
-//$('#dailylog').sticky({topSpacing: 0});
+$('#log').sticky({topSpacing: 72});
 // Daily Log End
 
 
