@@ -34,13 +34,16 @@ a:hover {
 
 #pixelsheet {
 	margin-left: 6%;
-	width: 50%;
 }
 
 .card {
 	height: 2.45em;
 	width: 2.45em;
 	margin-right: .3em;
+}
+
+#dailylog {
+	margin-right: 6%;
 }
 
 /*FORM STYLES*/
