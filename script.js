@@ -10,8 +10,8 @@ class pixel {
 
 var pixelSheet = [];
 
-for (var i=0; i<372; i+=1) {
-	var date = 372 - i;
+for (var i=0; i<365; i+=1) {
+	var date = 365 - i;
 	var emotion = Math.floor(Math.random()*8) + 1;
 	var rating = Math.floor(Math.random()*10) + 1;
 	var high = Math.floor(Math.random()*6) + 1;
