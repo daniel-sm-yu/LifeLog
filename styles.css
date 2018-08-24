@@ -30,14 +30,13 @@ a:hover {
 
 .row {
 	margin: 0;
-	margin-bottom: 5px;
 }
 
 
 .card {
 	height: 2.3em;
 	width: 2.3em;
-	margin-bottom: -.1em;
+	margin-bottom: .25em;
 	margin-right:  .25em;
 }
 
