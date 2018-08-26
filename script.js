@@ -1,4 +1,6 @@
-$('nav').sticky({topSpacing: 0});
+//$('nav').sticky({topSpacing: 0});
+
+$('.test').html('<h1 class="test2">LifeLog</h1><h1 class="test2">Lif23eLog</h1>');
 
 // Pixel Sheet
 class pixel {
@@ -40,7 +42,7 @@ for (var i=0; i<pixelSheet.length; i+=1) {
 		case 8: pixelColor = "#696969"; break;
 	}
 	
-	pixelHTML += '<div class="col-auto card" id="' + pixelSheet[i].date + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
+	pixelHTML += '<div class="col-auto card pixel" id="' + pixelSheet[i].date + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
 };
 
 
