@@ -1,7 +1,6 @@
 /*For Shine Effect in Nav*/
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400); 
 
-
 nav {
 	transition: .15s;
 }
@@ -54,29 +53,30 @@ a.nav-item:hover,
     color: white;
 }
 
-.content {
-
-}
-
 #pixelsheet {
-	margin-left: 6%;
 	z-index: -1;
+	max-width: 45%;
+	margin-left: 5%;
+	float: left;
 }
 
 .card {
-	height: 2.45em;
-	width: 2.45em;
-	margin-right: .3em;
+	height: 2em;
+	margin-left: .3em;
+	z-index: -1;
+}
+
+#dailylog {
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: right;
 }
 
 #dailylog,
 #logs {
 	z-index: -1;
 	height: 85vh;
-}
-
-#dailylog {
-	margin-right: 6%;
 }
 
 /*FORM STYLES*/

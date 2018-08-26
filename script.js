@@ -12,9 +12,10 @@ class pixel {
 };
 
 var pixelSheet = [];
+var pixelAmount = 365;
 
-for (var i=0; i<365; i+=1) {
-	var date = 365 - i;
+for (var i=0; i<pixelAmount; i+=1) {
+	var date = pixelAmount - i;
 	var emotion = Math.floor(Math.random()*8) + 1;
 	var rating = Math.floor(Math.random()*10) + 1;
 	var high = Math.floor(Math.random()*6) + 1;
@@ -39,51 +40,18 @@ for (var i=0; i<pixelSheet.length; i+=1) {
 		case 8: pixelColor = "#696969"; break;
 	}
 	
-	pixelHTML += '<div class="col-auto card" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
+	pixelHTML += '<div class="col-auto card" id="' + pixelSheet[i].date + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
 };
+
 
 pixelHTML += '</div>'
 
 $('#pixelsheet').html(pixelHTML);
+
+//console.log(pixelHTML);
 // Pixel Sheet End
-
-// Daily Log
-$('#logs').sticky({topSpacing: 72});
-// Daily Log End
-
-
-
-
-
-
-
-
-		
-          
-            
-          
-        
-
-
-
-
-
-
-
-
 
 
 
 
 	
-
-
-
-// var slider = document.getElementById("myRange");
-// var output = document.getElementById("demo");
-// output.innerHTML = slider.value; // Display the default slider value
-
-// // Update the current slider value (each time you drag the slider handle)
-// slider.oninput = function() {
-//     output.innerHTML = this.value;
-// }
