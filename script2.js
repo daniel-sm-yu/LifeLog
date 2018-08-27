@@ -91,7 +91,7 @@ for (var i=0; i<logsArray.length; i+=1) {
 		switch(pixelSheet[this.id].high) {
 			case 1: highHTML = "meeting up with your friends from middle school and seeing how much everyone has changed"; break;
 			case 2: highHTML = "getting that interview for your dream co-op job"; break;
-			case 3: highHTML = "finally booking your trip to California for this Winter"; break;
+			case 3: highHTML = "finally booking your trip to California next winter"; break;
 			case 4: highHTML = "surprising your parents after telling them you wouldn't be home for another month"; break;
 			case 5: highHTML = "relaxing and playing board games with your friends at the local cafe"; break;
 			case 6: highHTML = "walking around downtown and giving sandwiches and coffee to the homeless"; break;
@@ -102,10 +102,10 @@ for (var i=0; i<logsArray.length; i+=1) {
 // Loqlight
     	var lowHTML;
     	switch(pixelSheet[this.id].low) {
-    		case 1: lowHTML = "getting food poisoning a street vendor in chinatown"; break;
+    		case 1: lowHTML = "getting food poisoning from a street vendor in chinatown"; break;
     		case 2: lowHTML = "dropping your phone while running up the stairs and cracking it"; break;
-    		case 3: lowHTML = "wasting half of this month's data because you forgot to turn on my wifi"; break;
-    		case 4: lowHTML = "not warm up before working out and pulling a hamstring"; break;
+    		case 3: lowHTML = "wasting half of this month's data because you forgot to turn on your wifi"; break;
+    		case 4: lowHTML = "not warming up before working out and pulling a hamstring"; break;
     		case 5: lowHTML = "getting an allergic reaction from some random plant"; break;
     		case 6: lowHTML = "getting a haircut that turned out to be way too short"; break;
     	}
