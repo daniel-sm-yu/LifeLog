@@ -65,14 +65,17 @@ a.nav-item:hover,
 
 #dailylog {
 	width: 40%;
-	margin-left: 5%;
 	margin-right: 5%;
 	float: right;
 }
 
-#dailylog,
 #logs {
-	height: 92vh;
+	vertical-align: middle;
+}
+
+#dailylog,
+#logbox {
+	height: 75vh;
 }
 
 /*FORM STYLES*/

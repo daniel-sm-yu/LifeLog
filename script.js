@@ -42,7 +42,7 @@ for (var i=0; i<pixelSheet.length; i+=1) {
 		case 8: pixelColor = "#696969"; break;
 	}
 	
-	pixelHTML += '<div class="col-auto card pixel" id="' + pixelSheet[i].date + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
+	pixelHTML += '<div class="col-auto card pixel" id="' + i + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
 };
 
 
