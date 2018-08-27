@@ -12,7 +12,7 @@ var logsArray = document.getElementsByClassName("pixel")
 for (var i=0; i<logsArray.length; i+=1) {
 	 
 	logsArray[i].addEventListener("mouseover", function( event ) {   
-    	var logHTML = "<br><br><br><br>";
+    	var logHTML = "<br><br><br>";
 // Date
     	var entryDate = pixelSheet[this.id].date;
     	var monthHTML;
@@ -67,7 +67,7 @@ for (var i=0; i<logsArray.length; i+=1) {
     		dayHTML = entryDate - 334;
 
     	}
-    	logHTML += '<h4 class="font-weight-light text-center"> On ' + monthHTML + " " + dayHTML +', ';
+    	logHTML += '<h4 class="font-weight-light text-center" style="font-size: 2vw;"> On ' + monthHTML + " " + dayHTML +', ';
 // Date End
 
 // Emotion

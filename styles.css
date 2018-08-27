@@ -8,8 +8,6 @@ nav {
 .jumbotron {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/journal.jpg');
 	background-size: cover;
-	
-
 }
 
 .nav-item {
@@ -52,7 +50,7 @@ a.nav-item:hover,
 }
 
 .btn-outline-warning {
-	margin-top: 2.5em;
+	margin-top: 2.75em;
 }
 
 .btn-outline-warning:hover {
