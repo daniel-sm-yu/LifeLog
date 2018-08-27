@@ -5,6 +5,13 @@ nav {
 	transition: .15s;
 }
 
+.jumbotron {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/journal.jpg');
+	background-size: cover;
+	
+
+}
+
 .nav-item {
 	margin-right: 2em;
 	margin-left: .8em;
@@ -41,7 +48,7 @@ a.nav-item:hover,
 .heading {
 	color: rgba(0,0,0,.45);
 	text-align: center;
-	margin: 1em 0 .5em;
+	margin: 1.1em 0;
 }
 
 .btn-outline-warning {
@@ -63,6 +70,10 @@ a.nav-item:hover,
 	margin-left: .3em;
 }
 
+.glow-card:hover {
+ box-shadow: 0 0 20px rgba(88, 88, 88);
+}
+
 #dailylog {
 	width: 40%;
 	margin-right: 5%;
@@ -71,11 +82,13 @@ a.nav-item:hover,
 
 #logs {
 	vertical-align: middle;
+	padding: 0 4em;
 }
 
 #dailylog,
-#logbox {
+#logs {
 	height: 75vh;
+	border-radius: 15px;
 }
 
 /*FORM STYLES*/

@@ -1,6 +1,5 @@
 // Daily Log
-$('#logbox').sticky({topSpacing: 75});
-$('#logs').sticky({topSpacing: 150});
+$('#logs').sticky({topSpacing: 75});
 
 // $('#dailylog').hover(function() {
 // 	var logHTML = '';
@@ -13,7 +12,7 @@ var logsArray = document.getElementsByClassName("pixel")
 for (var i=0; i<logsArray.length; i+=1) {
 	 
 	logsArray[i].addEventListener("mouseover", function( event ) {   
-    	var logHTML = '<br><br>';
+    	var logHTML = "<br><br><br><br>";
 // Date
     	var entryDate = pixelSheet[this.id].date;
     	var monthHTML;
@@ -68,7 +67,7 @@ for (var i=0; i<logsArray.length; i+=1) {
     		dayHTML = entryDate - 334;
 
     	}
-    	logHTML += '<h4 class="font-weight-light text-justify"> On ' + monthHTML + " " + dayHTML +', ';
+    	logHTML += '<h4 class="font-weight-light text-center"> On ' + monthHTML + " " + dayHTML +', ';
 // Date End
 
 // Emotion
@@ -76,33 +75,47 @@ for (var i=0; i<logsArray.length; i+=1) {
 		var emotionColor;
 
 		switch(pixelSheet[this.id].emotion) {
-			case 1: emotionHTML = "Bored"; emotionColor = "#CD853F"; break;
-			case 2: emotionHTML = "Angry"; emotionColor = "#FC6161"; break;
-			case 3: emotionHTML = "Excited"; emotionColor = "#FC9C48"; break;
-			case 4: emotionHTML = "Happy"; emotionColor = "#FCD848"; break;
-			case 5: emotionHTML = "Sick"; emotionColor = "#48FCA2"; break;
-			case 6: emotionHTML = "Sad"; emotionColor = "#48EAFC"; break;
-			case 7: emotionHTML = "Annoyed"; emotionColor = "#B06EF2"; break;
-			case 8: emotionHTML = "Stressed"; emotionColor = "#C2C5CC"; break;
+			case 1: emotionHTML = "bored"; emotionColor = "#CD853F"; break;
+			case 2: emotionHTML = "angry"; emotionColor = "#FC6161"; break;
+			case 3: emotionHTML = "excited"; emotionColor = "#FC9C48"; break;
+			case 4: emotionHTML = "happy"; emotionColor = "#FCD848"; break;
+			case 5: emotionHTML = "sick"; emotionColor = "#48FCA2"; break;
+			case 6: emotionHTML = "sad"; emotionColor = "#48EAFC"; break;
+			case 7: emotionHTML = "annoyed"; emotionColor = "#B06EF2"; break;
+			case 8: emotionHTML = "stressed"; emotionColor = "#C2C5CC"; break;
 		}
 		
 
-    	logHTML += 'You Were Feeling ' + emotionHTML + '. ';
-    	$('#logbox').css({"background-color": emotionColor});
+    	logHTML += 'You were feeling ' + emotionHTML + '. ';
+    	$('#logs').css({"background-color": emotionColor});
 // Emotion End
     	logHTML += 'You had a ' + pixelSheet[this.id].rating + ' out of 10 kind of day. ';
 
 // Highlight
-    	logHTML += 'The highlight of your day was ' + pixelSheet[this.id].high + '. '; 	
+		var highHTML;
+		switch(pixelSheet[this.id].high) {
+			case 1: highHTML = "meeting up with your friends from middle school and seeing how much everyone has changed"; break;
+			case 2: highHTML = "getting that interview for your dream co-op job"; break;
+			case 3: highHTML = "finally booking your trip to California for this Winter"; break;
+			case 4: highHTML = "surprising your parents after telling them you wouldn't be home for another month"; break;
+			case 5: highHTML = "relaxing and playing board games with your friends at the local cafe"; break;
+			case 6: highHTML = "walking around downtown and giving sandwiches and coffee to the homeless"; break;
+		}
+    	logHTML += 'The highlight of your day was ' + highHTML + '. '; 	
 // Highlight End
     	
 // Loqlight
-    	logHTML += 'The lowlight of your day was ' + pixelSheet[this.id].low + '.</h4>'; 	
+    	var lowHTML;
+    	switch(pixelSheet[this.id].low) {
+    		case 1: lowHTML = "getting food poisoning a street vendor in chinatown"; break;
+    		case 2: lowHTML = "dropping your phone while running up the stairs and cracking it"; break;
+    		case 3: lowHTML = "wasting half of this month's data because you forgot to turn on my wifi"; break;
+    		case 4: lowHTML = "not warm up before working out and pulling a hamstring"; break;
+    		case 5: lowHTML = "getting an allergic reaction from some random plant"; break;
+    		case 6: lowHTML = "getting a haircut that turned out to be way too short"; break;
+    	}
+    	logHTML += 'The lowlight of your day was ' + lowHTML+ '.</h4>'; 	
 // Lowlight End
-
-    	
-
-
 
 
     	$('#logs').html(logHTML);
