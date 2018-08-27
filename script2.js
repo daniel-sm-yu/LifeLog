@@ -1,13 +1,7 @@
 // Daily Log
 $('#logbox').sticky({topSpacing: 75});
 
-// $('#dailylog').hover(function() {
-// 	var logHTML = '';
-// 	console.log("ere");
-// 	$('.logs').html(logHTML);
-// });
-
-var logsArray = document.getElementsByClassName("pixel")
+var logsArray = document.getElementsByClassName("card")
 
 for (var i=0; i<logsArray.length; i+=1) {
 	 
@@ -67,7 +61,7 @@ for (var i=0; i<logsArray.length; i+=1) {
     		dayHTML = entryDate - 334;
 
     	}
-    	logHTML += '<h4 class="font-weight-light text-center" style="font-size: 2vw;"> On ' + monthHTML + " " + dayHTML +', ';
+    	logHTML += '<h4 class="font-weight-light text-center" style="font-size: 2vw;"> On <strong>' + monthHTML + " " + dayHTML +'</strong>, ';
 // Date End
 
 // Emotion
@@ -86,10 +80,11 @@ for (var i=0; i<logsArray.length; i+=1) {
 		}
 		
 
-    	logHTML += 'You were feeling ' + emotionHTML + '. ';
+    	logHTML += 'You were feeling <strong>' + emotionHTML + '</strong>. ';
     	$('#logbox').css({"background-color": emotionColor});
 // Emotion End
-    	logHTML += 'You had a ' + pixelSheet[this.id].rating + ' out of 10 kind of day. ';
+    	
+    	logHTML += 'You had a <strong>' + pixelSheet[this.id].rating + ' out of 10 </strong> kind of day. ';
 
 // Highlight
 		var highHTML;
@@ -101,7 +96,7 @@ for (var i=0; i<logsArray.length; i+=1) {
 			case 5: highHTML = "relaxing and playing board games with your friends at the local cafe"; break;
 			case 6: highHTML = "walking around downtown and giving sandwiches and coffee to the homeless"; break;
 		}
-    	logHTML += 'The highlight of your day was ' + highHTML + '. '; 	
+    	logHTML += 'The highlight of your day was <strong>' + highHTML + '</strong>. '; 	
 // Highlight End
     	
 // Loqlight
@@ -114,15 +109,12 @@ for (var i=0; i<logsArray.length; i+=1) {
     		case 5: lowHTML = "getting an allergic reaction from some random plant"; break;
     		case 6: lowHTML = "getting a haircut that turned out to be way too short"; break;
     	}
-    	logHTML += 'The lowlight of your day was ' + lowHTML+ '.</h4>'; 	
+    	logHTML += 'The lowlight of your day was <strong>' + lowHTML+ '</strong>.</h4>'; 	
 // Lowlight End
-
 
     	$('#logs').html(logHTML);
 	})
 }
-
-   
 
 // Daily Log End
 

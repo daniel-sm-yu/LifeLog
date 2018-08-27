@@ -1,7 +1,3 @@
-//$('nav').sticky({topSpacing: 0});
-
-$('.test').html('<h1 class="test2">LifeLog</h1><h1 class="test2">Lif23eLog</h1>');
-
 // Pixel Sheet
 class pixel {
 	constructor(date, emotion, rating, high, low) {
@@ -42,15 +38,11 @@ for (var i=0; i<pixelSheet.length; i+=1) {
 		case 8: pixelColor = "#696969"; break;
 	}
 	
-	pixelHTML += '<div class="col-auto card glow-card pixel" id="' + i + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
+	pixelHTML += '<div class="col-auto card glow-card" id="' + i + '" style="display: inline-block; background-color:' + pixelColor + ';"></div>';
 };
-
-
-pixelHTML += '</div>'
 
 $('#pixelsheet').html(pixelHTML);
 
-//console.log(pixelHTML);
 // Pixel Sheet End
 
 

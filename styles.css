@@ -1,10 +1,6 @@
 /*For Shine Effect in Nav*/
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400); 
 
-nav {
-	transition: .15s;
-}
-
 .jumbotron {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/journal.jpg');
 	background-size: cover;
