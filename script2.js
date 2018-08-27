@@ -1,5 +1,5 @@
 // Daily Log
-$('#logs').sticky({topSpacing: 75});
+$('#logbox').sticky({topSpacing: 75});
 
 // $('#dailylog').hover(function() {
 // 	var logHTML = '';
@@ -12,7 +12,7 @@ var logsArray = document.getElementsByClassName("pixel")
 for (var i=0; i<logsArray.length; i+=1) {
 	 
 	logsArray[i].addEventListener("mouseover", function( event ) {   
-    	var logHTML = "<br><br><br>";
+    	var logHTML = "";
 // Date
     	var entryDate = pixelSheet[this.id].date;
     	var monthHTML;
@@ -87,7 +87,7 @@ for (var i=0; i<logsArray.length; i+=1) {
 		
 
     	logHTML += 'You were feeling ' + emotionHTML + '. ';
-    	$('#logs').css({"background-color": emotionColor});
+    	$('#logbox').css({"background-color": emotionColor});
 // Emotion End
     	logHTML += 'You had a ' + pixelSheet[this.id].rating + ' out of 10 kind of day. ';
 

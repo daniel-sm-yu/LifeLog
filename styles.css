@@ -80,11 +80,11 @@ a.nav-item:hover,
 
 #logs {
 	vertical-align: middle;
-	padding: 0 4em;
+	padding: 18% 10%;
 }
 
 #dailylog,
-#logs {
+#logbox {
 	height: 75vh;
 	border-radius: 15px;
 }
