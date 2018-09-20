@@ -1,3 +1,10 @@
+
+// Demo Alert
+$(".demo").click(function() {
+	$("#demo-alert").html("<div class='alert alert-danger alert-dismissible fade show' role='alert'>This will be included in the <strong>full</strong> site.<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>");
+})
+// Demo Alert End
+
 // Pixel Sheet
 class pixel {
 	constructor(date, emotion, rating, high, low) {
