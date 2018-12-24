@@ -99,7 +99,7 @@ for (var i=0; i<logsArray.length; i+=1) {
     	logHTML += 'The highlight of your day was <strong>' + highHTML + '</strong>. '; 	
 // Highlight End
     	
-// Loqlight
+// Lowlight
     	var lowHTML;
     	switch(pixelSheet[this.id].low) {
     		case 1: lowHTML = "getting food poisoning from a street vendor in chinatown"; break;
