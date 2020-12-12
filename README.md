@@ -5,5 +5,5 @@ Hover over the colourful pixels to see the details of that day, each colour reqr
 Click on the links in the header to learn more about the creator or navigate to different parts of the website.
 
 <pre>
-<img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/LifeLogREADME/LifeLog1.png" width="45%">   <img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/LifeLogREADME/LifeLog4.png" width="45%">   <img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/LifeLogREADME/LifeLog2.png" width="45%">
+<img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/demo-img/LifeLog1.png" width="45%">   <img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/demo-img/LifeLog2.png" width="45%">   <img src="https://github.com/daniel-sm-yu/LifeLog/blob/master/demo-img/LifeLog3.png" width="45%">
 </pre>
